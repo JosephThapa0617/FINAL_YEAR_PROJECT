@@ -1,0 +1,15 @@
+It contains 4 dof robot with environment setup 
+here with alpha beta and position constraints the end effector of the robot is always parallel to the ground
+
+
+Since the change of coordinates in ground level might knock down the other cups while the robot is moving from one coordinate to another
+the operation is divided into two minor steps 
+
+the first step is to go to the x,y coordinate of the desired location with z coordinate larger than the cup height let's suppose (H)
+due to this the robot will hover over the cups without knocking them
+
+After the x,y is fixed next comes the z coordinate adjustment so that the robot can hold the cups and move accordingly
+
+Once the robot has grabbed the cup it lifts the cup with previous z coordinate i.e. H 
+
+
